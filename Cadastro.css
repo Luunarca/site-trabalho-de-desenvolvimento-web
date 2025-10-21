@@ -1,0 +1,165 @@
+/* Estilos específicos para o formulário de cadastro */
+
+/* Card principal do formulário, usando o mesmo estilo do site */
+.form-card {
+    display: flex;
+    width: 100%;
+    max-width: 900px; /* Largura máxima do card */
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden; /* Garante que os cantos arredondados sejam aplicados à imagem */
+}
+
+/* Container da imagem à esquerda */
+.form-image-container {
+    width: 45%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Container do formulário à direita */
+.form-content {
+    width: 55%;
+    padding: 30px 40px;
+    color: var(--text-color);
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--btn-bg);
+}
+
+.form-header h1 {
+    font-size: 2em;
+}
+
+.login-button button {
+    background: transparent;
+    border: 1px solid var(--btn-bg);
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-button button:hover {
+    background: var(--btn-bg);
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+.login-button button:hover a{
+    color: var(--btn-text);
+}
+
+
+/* Agrupamento dos campos de input */
+.input-group {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os campos quebrem a linha */
+    justify-content: space-between;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%; /* Ocupa a largura total por padrão */
+}
+
+/* Faz com que nome e sobrenome fiquem lado a lado */
+.input-group .input-box:nth-child(1),
+.input-group .input-box:nth-child(2) {
+    width: 48%;
+}
+
+.input-box label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    font-size: 1em;
+}
+
+.input-box input:focus {
+    outline: 2px solid var(--btn-bg);
+}
+
+/* Botão de continuar */
+.continue-button {
+    margin-top: 15px;
+}
+
+.continue-button button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.continue-button button:hover {
+    opacity: 0.9;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .form-card {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+
+    .form-image-container {
+        display: none; /* Esconde a imagem em telas pequenas para focar no formulário */
+    }
+
+    .form-content {
+        width: 100%;
+        padding: 25px;
+    }
+
+    /* Garante que todos os campos ocupem a largura total em telas menores */
+    .input-group .input-box,
+    .input-group .input-box:nth-child(1),
+    .input-group .input-box:nth-child(2) {
+        width: 100%;
+    }
+
+    .form-header h1 {
+        font-size: 1.5em;
+    }
+}
+

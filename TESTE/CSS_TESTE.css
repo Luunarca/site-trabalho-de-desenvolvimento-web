@@ -1,0 +1,84 @@
+.maraca{
+
+    width: 100px;
+    height: 100px;
+    background: url('../IMAGENS/maraca.png') no-repeat center center;
+    background-size: contain;
+    margin: auto;
+
+
+}
+
+.curimbo{
+
+    width: 100px;
+    height: 100px;
+    background: url('../IMAGENS/maraca.png') no-repeat center center;
+    background-size: contain;
+    margin: auto;
+
+
+}
+
+
+
+.banjo{
+
+    width: 100px;
+    height: 100px;
+    background: url('../IMAGENS/maraca.png') no-repeat center center;
+    background-size: contain;
+    margin: auto;
+
+
+}
+
+
+.saxofone{
+
+    width: 100px;
+    height: 100px;
+    background: url('../IMAGENS/maraca.png') no-repeat center center;
+    background-size: contain;
+    margin: auto;
+
+
+}
+
+
+.carousel-container {
+  position: relative;
+  width: 200px; /* ajuste conforme o layout */
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 600px; /* mesma largura do container */
+  height: 350px; /* opcional */
+  object-fit: cover;
+}
+  
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }

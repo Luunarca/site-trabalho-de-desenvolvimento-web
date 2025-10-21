@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Valente, Enzo Hoshino">
+    <title>Cadastro - Instrumentos do Pará</title>
+    <link rel="icon" href="/img/640px-Bandeira_do_Pará.sgv.png" type="image/icon-x">
+    <link rel="stylesheet" href="CSS_01.css">
+    <link rel="stylesheet" href="Cadastro.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html">Instrumentos do Pará</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Categorias ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="index.html" class="category-link" data-category="all">Todos os Instrumentos</a></li>
+                        <li><a href="index.html" class="category-link" data-category="Carimbó">Carimbó</a></li>
+                        <li><a href="index.html" class="category-link" data-category="Bumba-meu-Boi">Bumba-meu-Boi</a></li>
+                        <li><a href="index.html" class="category-link" data-category="favorites">Favoritos</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="theme-toggle"></button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-card">
+            <div class="form-image-container">
+                <img src="img/tambor.jpg" alt="Tambor">
+            </div>
+            <div class="form-content">
+                <form action="index.html">
+                    <div class="form-header">
+                        <h1>Cadastre-se</h1>
+                        <div class="login-button">
+                            <button type="button"><a href="#">Entrar</a></button>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="firstname">Primeiro Nome</label>
+                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="lastname">Sobrenome</label>
+                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="number">Telefone</label>
+                            <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                        </div>
+                    </div>
+
+                    <div class="continue-button">
+                        <a href="index.html" role="button"><button>Continuar</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Instrumentos do Pará</h3>
+                <p>Preservando e divulgando a riqueza cultural dos instrumentos musicais paraenses.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul class="footer-links">
+                     <li><a href="index.html">Início</a></li><br>
+                     <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <div class="contact-info">
+                    <p>📧 luucas.vallente@gmail.com</p><br>
+                    <p>📞 (91) 99128-6342 (Lucas) /<br>
+                        📞  (91) 98640-5199 (Enzo)</p><br>
+                    <p>📍 Belém - Pará</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Instrumentos do Pará. Todos os direitos reservados a Lucas Valente e Enzo Hoshino.</p>
+        </div>
+
+    </footer>
+
+    <script src="Java.js"></script>
+    
+    
+</body>
+</html>
